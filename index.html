@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <style>
+        body{ background-image: url("./designs/backdrop.jpg");
+               background-repeat: no-repeat; 
+               background-size: 100% 100%;
+            }
+    </style>
+    <style>
+        .layer-img1, .layer-img2, .layer-img3 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .name {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 80px;
+        }
+        .degree {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+        }
+        .brain {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 60px;
+        }
+        .layer-img4 {
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 200px;
+        }
+        @media screen and (max-width: 600px) {
+            .layer-img1, .layer-img2, .layer-img3, .layer-img4 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layer-img1">
+        <img class='name' src="./designs/name.svg" alt="Name">       
+    </div>
+    <div class="layer-img2">
+        <img class='degree' src="./designs/degree1.svg" alt="Degree">       
+    </div>
+    <div class="layer-img3">
+        <img class='brain' src="./designs/Brain.svg" alt="Brain">
+    </div>
+    <div class="layer-img4">
+        <a href=""><img src="./designs/resume.svg" alt="Brain"></a>
+        <a href="mailto:ishmam1998@gmail.com"><img src="./designs/mail.svg" alt="Brain"></a>
+        <a href="https://www.linkedin.com/in/iimon/"><img src="./designs/linkedin.svg" alt="Brain"></a>
+        <a href="https://github.com/ishmam8"><img src="./designs/github.svg" alt="Brain"></a>
+        <a href="https://twitter.com/ismamimon"><img src="./designs/twitter.svg" alt="Brain"></a>
+        <a href="./skills.html">
+            <img src="https://img.icons8.com/material-rounded/40/000000/guest-male.png" alt="Brain"><i class="icon-edit icon-white"></i></a>
+    </div>
+</body>
+</html>
