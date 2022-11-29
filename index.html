@@ -3,228 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>IMON</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./parallax.css">
+    <link rel="stylesheet" href="./home.css">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-    <script language="JavaScript" src="./scripts/gen_validatorv31.js" type="text/javascript"></script>
-    <style>
-        body{ margin: 0 0;
-            }
-        .intro {
-            background-image: url("./designs/backdrop.jpg");
-            background-repeat: no-repeat; 
-            background-size: 100% 100%;
-            padding-bottom: 16rem;
-        }
-        .layer-img1, .layer-img2, .layer-img3 {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        .name {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 150px;
-        }
-        .degree {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 30px;
-        }
-        .brain {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 80px;
-        }
-        .layer-img4 {
-            display: flex;
-            justify-content: space-around;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            margin-top: 80px;
-        }
-        @media screen and (max-width: 600px) {
-            .layer-img1, .layer-img2, .layer-img3, .layer-img4 {
-                width: 100%;
-            }
-        }
-        .layer5 {
-            width: 100%;
-            height: 400px;
-            background-color: #fff;
-            border-color: black;
-        }
-        .navbar {
-            transition: all 0.6s;
-        }
-        .navbar-scrolled {
-            background-color: rgb(98, 0, 62);
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
-        }
-        .aboutme {
-            margin:0.8rem;
-            padding-bottom: 2rem;
-        }
-        .btn {
-            color: #fff;
-            background-color:rgb(98, 0, 62)
-        }
-        .btn:hover{
-            color: rgb(98, 0, 62);
-            background-color: white;
-            border-color: rgb(98, 0, 62);;
-        }
-        .my-image {
-            padding-top: 3rem; 
-            padding-left: 40%;
-        }
-        .grid-style-about{
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: 1fr; 
-        } 
-        .my-info {
-            padding-right: 5rem; 
-            padding-top: 10rem; 
-            padding-left: 1rem;
-        } 
-        @media screen and (max-width: 900px) {
-            .grid-style-about{
-                display: grid;
-                grid-auto-flow: row;
-                /* grid-auto-rows: 1fr;  */
-            }
-            .my-image {
-            padding-top: 2rem; 
-            padding-left: 15%;
-            } 
-            .my-info {
-            padding-top: 1.25rem; 
-            margin-bottom: 0;
-        } 
-        }
-        .projects {
-            background: #E6DADA;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to top, #32535b, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to top, #32535b, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-            text-align: center;
-        }
-        .project-grid {
-            padding: 1rem;
-            display: grid;
-            /* grid-auto-flow: column; */
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-auto-rows: auto;
-            /* row-gap: 4rem; */
-            grid-gap: 3rem;
-            text-align: center;
-            place-items:  center;
-        }
-        .card-img-top {
-            width: 3rem; 
-            padding-top: 1rem ;
-        }
-        .card1 {
-            /* background-color: #274046; */
-            width: 22rem; 
-            height: 25rem;
-            border-radius: 8px;
-            color: rgb(45, 39, 39);
-            font-weight: bold;
-            font-size: 17px;
-        }
-        .card1:hover{
-            background-color: rgb(78, 0, 49);
-            transform: scale(1.05);
-            transition: all 0.5s;
-            color: rgb(255, 231, 231);
-        }
-        .card-text {
-            padding-top: 0.5rem;
-        }
-        @media screen and (max-width: 1180px) {
-            .project-grid {
-                padding: 1rem;
-                display: grid;
-                /* grid-auto-flow: column; */
-                grid-template-columns: 1fr 1fr;
-                grid-auto-rows: auto;
-                /* row-gap: 4rem; */
-                grid-gap: 3rem;
-                text-align: center;
-                place-items:  center;
-        }}
-        @media screen and (max-width: 770px) {
-            .project-grid {
-                padding: 1rem;
-                display: grid;
-                /* grid-auto-flow: column; */
-                grid-template-columns: 1fr ;
-                grid-auto-rows: auto;
-                /* row-gap: 4rem; */
-                grid-gap: 3rem;
-                text-align: center;
-                place-items:  center;
-        }}
-        .skills-grid {
-            display: grid;
-            grid-auto-flow: column;
-            grid-gap: 3rem;
-            place-items: center;
-            padding-top: 2rem;
-            padding-left: 10rem;
-            padding-right: 10rem;
-        }
-        .experience {
-            display: block;
-            padding: 2rem;
-        }
-        .language-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 2rem;
-            padding: 1rem;
-        }
-        .lang-bold {
-            font-weight: bold;
-        }
-        #contact {
-            width: 100%;
-            background: linear-gradient(to bottom right, #fff 0%, #fff 57%, #d6d6d6 50%, #a9a9a9 100%);
-        }
-        #contact-form {
-            padding: 3rem;
-            padding-bottom: 0rem;
-            padding-left: 35%;
-            padding-right: 35%;
-            display: block;
-            /* padding-left: 60%; */
-            font-weight: bold;
-            place-items: center;
-        }
-        #contact-form:hover {
-            display: block;
-            transform: scale(1.05);
-            transition: all 0.5s;
-            color: rgb(0, 0, 0);
-        }
-        .form-control {
-            box-shadow: 0px 1px 4px 1px rgba(107, 107, 107, 0.504);
-        }
-    </style>
+    <!-- <script language="JavaScript" src="./scripts/gen_validatorv31.js" type="text/javascript"></script> -->
+    ativity monitor 
 </head>
 <body>
     <nav id="main-nac" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-          <!-- <a class="navbar-brand fs-10" href="#">Portfolio</a> -->
+          <a class="navbar-brand fs-10" href="#">Ismam Imon</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -237,7 +27,8 @@
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
+
     <div class="intro">
         <div class="layer-img1">
             <img class='name' src="./designs/name.svg" alt="Name">       
@@ -257,7 +48,9 @@
             <!-- <a href="./skills.html" title="About Me">
                 <img src="https://img.icons8.com/material-rounded/40/000000/guest-male.png" alt="Brain"></a> -->
         </div>
+
     </div>
+
     <div class="aboutme" id="aboutme">
         <h2 style="padding-top: 3.5rem; text-align: center">About Me</h2>
         <div class="grid-style-about">
@@ -276,6 +69,7 @@
             </div>
         </div>
     </div>
+
     <div class="projects" id="projects">
         <h2 style="padding-top: 3.5rem; padding-bottom: 1rem; text-align: center">Projects</h2>
         <div class="project-grid">
@@ -316,105 +110,75 @@
             </div>
         </div>
     </div>
-    <!-- <div class="parallax">
-        <div class="fixed">SCROLL ME</div>
-        <div class="parallax__layer parallax__layer--back">
-          <div class="starfield">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="parallax__layer parallax__layer--back2">
-          <div class="starfield">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="parallax__layer parallax__layer--back3">
-          <div class="starfield">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="parallax__layer parallax__layer--base">
-          <div class="starfield">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>    
-      
-      </div> -->
-    <div class="skills" id="skills">
-        <h2 style="padding-top: 3.5rem; text-align: center">My skills</h2>
-        <div class="skills-grid">
-            
-            <div class="experience">
-                <h4>My creative skills & experience</h4>
-                <p> Professional with 3+ years of work experience in Python.
-                    Over the course of education and internship, I’ve had the chance to collborate with diverse professionals and 
-                    challenge myself in agile environments. Working with various languages and tools and being naturally inquisitive led me to strengthen my programming and analytical abilities.</p>
-            </div>
-            <div class="language-grid">
-                <div class="lang-row-grid">
-                    <p class="lang-bold">Python</p>
-                    <p class="lang-bold">Javascipt</p>
-                    <p class="lang-bold">HTML</p>
-                    <p class="lang-bold">CSS</p>
-                    <p class="lang-bold">SQL</p>
-                    <p class="lang-bold">C++</p>
-                    <p class="lang-bold">R</p>
-                    <p class="lang-bold">Matplotlib</p>
+
+    <div class="float-objects">
+        <div class="skills" id="skills">
+            <h2 style="padding-top: 3.5rem; text-align: center">My skills</h2>
+            <div class="skills-grid">
+                
+                <div class="experience">
+                    <h4>My creative skills & experience</h4>
+                    <p> Professional with 3+ years of work experience in Python.
+                        Over the course of education and internship, I’ve had the chance to collborate with diverse professionals and 
+                        challenge myself in agile environments. Working with various languages and tools and being naturally inquisitive led me to strengthen my programming and analytical abilities.</p>
                 </div>
-                <div class="lang-row-grid">
-                    <p class="lang-bold">React.js</p>
-                    <p class="lang-bold">Node.js</p>
-                    <p class="lang-bold">Express</p>
-                    <p class="lang-bold">Bootstrap</p>
-                    <p class="lang-bold">NumPy</p>
-                    <p class="lang-bold">OpenCV</p>
-                </div>
-                <div class="lang-row-grid">
-                    <p class="lang-bold">MongoDB</p>
-                    <p class="lang-bold">PostgreSQL</p>
-                    <p class="lang-bold">Docker</p>
-                    <p class="lang-bold">Kubernetes</p>
-                    <p class="lang-bold">Tableau</p>
+                <div class="language-grid">
+                    <div class="lang-row-grid">
+                        <p class="lang-bold">Python</p>
+                        <p class="lang-bold">Javascipt</p>
+                        <p class="lang-bold">HTML</p>
+                        <p class="lang-bold">CSS</p>
+                        <p class="lang-bold">SQL</p>
+                        <p class="lang-bold">C++</p>
+                        <p class="lang-bold">R</p>
+                        <p class="lang-bold">Matplotlib</p>
+                    </div>
+                    <div class="lang-row-grid">
+                        <p class="lang-bold">React.js</p>
+                        <p class="lang-bold">Node.js</p>
+                        <p class="lang-bold">Express</p>
+                        <p class="lang-bold">Bootstrap</p>
+                        <p class="lang-bold">NumPy</p>
+                        <p class="lang-bold">OpenCV</p>
+                    </div>
+                    <div class="lang-row-grid">
+                        <p class="lang-bold">MongoDB</p>
+                        <p class="lang-bold">PostgreSQL</p>
+                        <p class="lang-bold">Docker</p>
+                        <p class="lang-bold">Kubernetes</p>
+                        <p class="lang-bold">Tableau</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="contact">
-        <h2 style="padding-top: 3.5rem; text-align: center">Contact Me</h2>
-        <div class="contact-curve">
-            <form method="post" id="contact-form" action="contact-form.php"> 
-            <p>
-            <label for='name'>Name</label>
-            <input type="text" name="name" class="form-control">
-            </p>
-            <p>
-            <label for='email'>Email</label>
-            <input type="text" name="email" class="form-control">
-            </p>
-            <p>
-            <label for='subject'>Subject</label>
-            <input type="text" name="subject" class="form-control"> 
-            </p>
-            <p>
-            <label for='message'>Message</label> 
-            <textarea name="message" class="form-control"></textarea>
-            </p>
-            <input type="submit" value="Submit" class="btn btn-md">
-            </form>
+
+        <div id="contact">
+            <h2 style="padding-top: 3.5rem; text-align: center">Contact Me</h2>
+            <div class="contact-curve">
+                <form method="post" id="contact-form" action="contact-form.php"> 
+                <p>
+                <label for='name'>Name</label>
+                <input type="text" name="name" class="form-control">
+                </p>
+                <p>
+                <label for='email'>Email</label>
+                <input type="text" name="email" class="form-control">
+                </p>
+                <p>
+                <label for='subject'>Subject</label>
+                <input type="text" name="subject" class="form-control"> 
+                </p>
+                <p>
+                <label for='message'>Message</label> 
+                <textarea name="message" class="form-control"></textarea>
+                </p>
+                <input type="submit" value="Submit" class="btn btn-md">
+                </form>
+            </div>
         </div>
+
     </div>
+
     <script>
         const navE1 = document.querySelector('.navbar');
 
@@ -427,7 +191,7 @@
         })
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/mdb.js"></script>
+    <!-- <script type="text/javascript" src="js/mdb.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
